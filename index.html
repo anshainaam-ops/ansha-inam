@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0b0f14">
+<title>Ansha Inam Industry</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')}catch(e){document.documentElement.dataset.theme='dark'}</script>
+</head>
+<body>
+<!-- HINT: the business name also appears in js/app.js (invoices & reports). Pictures: Settings → Product pictures. See the QUICK GUIDE at the top of js/app.js. -->
+<section id="login" class="login">
+  <form id="loginForm" class="card">
+    <img class="login-logo brand-logo" alt="Ansha Inam Industry">
+    <h1>Ansha Inam Industry</h1>
+    <p class="muted">Private access · نجی رسائی<br>Rahimabad, Mingora, Swat</p>
+    <label>Email<input name="email" type="email" required autocomplete="username"></label>
+    <label>Password · پاس ورڈ<input name="password" type="password" required autocomplete="current-password"></label>
+    <button class="btn" type="submit">Login · لاگ اِن</button>
+    <p id="loginErr" class="err"></p>
+  </form>
+</section>
+<div id="app" hidden>
+  <header class="top">
+    <div class="bar1">
+      <a class="brand" href="#/dash"><img class="brand-logo" alt=""><span><b>Ansha Inam</b><small>INDUSTRY</small></span></a>
+      <span class="sp"></span>
+      <span id="who" class="chip"></span>
+      <div class="seg" role="group" aria-label="language"><button id="lEn" data-act="lang" data-l="en">EN</button><button id="lUr" data-act="lang" data-l="ur">اردو</button></div>
+      <button class="ib" id="themeBtn" data-act="theme" aria-label="theme">🌙</button>
+      <button class="ib" data-act="logout" aria-label="logout" title="Logout">⏻</button>
+    </div>
+    <nav id="nav"><span id="navInd"></span><span id="navLinks"></span></nav>
+  </header>
+  <main id="main"></main>
+</div>
+<div id="modal" hidden></div>
+<div id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/logo.js"></script>
+<script src="js/qrcode.js"></script>
+<script src="js/rview.js"></script>
+<script src="js/app.js"></script>
+<script src="js/khata2.js"></script>
+</body>
+</html>
